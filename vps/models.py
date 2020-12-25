@@ -31,20 +31,29 @@ class Goods(models.Model):
         (1,'有货')        
     )
     lineChoices = (
-        ('CN2-GT','CN2-GT'),
-        ('CN2-GIA','CN2-GIA'),
-        ('BGP','BGP'),
+        ('GIA','GIA'),
+        ('BGP', 'BGP'),
+        ('NTT','NTT'),
+        ('IIJ','IIJ'),
+        ('SoftBank','SoftBank'),
         ('PCCW','PCCW'),
+        ('HKBN','HKBN'),
+        ('HGC','HGC'),
+        ('GTT','GTT'),
+        ('Telia','Telia'),
+        ('Other','Other'),
     )
     dcChoices = (
-        ('ATL','ATL'),
-        ('LA','LA'),
-        ('SEA','SEA'),
-        ('HK','HK'),
-        ('Taiwan','Taiwan'),
-        ('Frankfurt','Frankfurt'),
-        ('China','China'),
-        ('Overseas','Overseas'),
+        ('HK','Hong Kong'),
+        ('TYO','Tokyo, Japan'),
+        ('OSA','Osaka, Japan'),
+        ('SEO',', Seoul, KR'),
+        ('SG','Singapore'),
+        ('SJ','San Jose, US'),
+        ('LAX','Los Angeles, US'),
+        ('FFM','Frankfurt, DE'),
+        ('CN','China'),
+        ('Other','Other'),
         ('Global','Global'),
     )
     company = models.ForeignKey(Company , to_field='id' , on_delete=models.DO_NOTHING , verbose_name="商家",blank=False,null=False)
