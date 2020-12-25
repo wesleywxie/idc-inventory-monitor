@@ -7,7 +7,7 @@
 
 ## 安装/Install
 本环境需要python3的运行环境以及python3-pip
-下载源码后运行 `pip3 install django ; pip3 install requests`
+下载源码后运行 `pip3 install django requests`
 
 ## 配置邮件
 将 `vpsmonitor/settings_local.py` 重命名为 `vpsmonitor/settings.py` ，并设置好对应的邮箱信息。
