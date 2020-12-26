@@ -54,6 +54,10 @@ class Goods(models.Model):
         ('LAX','Los Angeles, US'),
         ('FFM','Frankfurt, DE'),
         ('CN','China'),
+        ('上海CN2','SHCN2'),
+        ('泉州CN2','QZCN2'),
+        ('上海联通','SHCU'),
+        ('香港IPLC','HKIPLC'),
         ('Other','Other'),
     )
     company = models.ForeignKey(Company , to_field='id' , on_delete=models.DO_NOTHING , verbose_name="商家",blank=False,null=False)
