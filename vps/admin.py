@@ -2,19 +2,13 @@ from django.contrib import admin
 from vps import models
 from django.utils.html import format_html
 
-
-
-
 # Register your models here.
-
-
 class CompanyAdmin(admin.ModelAdmin):
     list_display = ('name', 'url','need_monitor','connect_pid','out_of_stock_string','update_time')
     list_per_page = 20
     list_filter = ('name','need_monitor' )
     search_fields = ['name']
     list_display_links = ('name',)
-
 
 
 class GoodsAdmin(admin.ModelAdmin):
@@ -37,8 +31,6 @@ class GoodsAdmin(admin.ModelAdmin):
 class SubscribeAdmin(admin.ModelAdmin):
     list_display = ('id','email','status','update_time')
     search_fields = ['email',]
-
-
 
 
 admin.site.register(models.Company, CompanyAdmin)

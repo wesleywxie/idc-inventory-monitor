@@ -7,3 +7,4 @@ vpsmonitor/settings.py
 db.sqlite3
 vps/static/admin/*
 .idea
+venv
