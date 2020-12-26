@@ -3,7 +3,7 @@
 项目主页：[https://www.jiloc.com/46825.html](https://www.jiloc.com/46825.html)
 
 ## 演示/Demo
-[在线演示/Online Demo](https://stock.exploremore.com)
+[在线演示/Online Demo](https://stock.exploremore.xyz)
 
 ## 安装/Install
 本环境需要python3的运行环境以及python3-pip
