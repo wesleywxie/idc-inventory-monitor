@@ -47,6 +47,6 @@ admin.site.register(models.Goods, GoodsAdmin)
 
 admin.site.register(models.Subscribe, SubscribeAdmin)
 
-admin.site.site_header = 'VPS库存监控系统'
-admin.site.site_title = 'VPS库存监控系统'
+admin.site.site_header = 'IDC库存监控系统'
+admin.site.site_title = 'IDC库存监控系统'
 admin.site.index_title = '后台管理'
