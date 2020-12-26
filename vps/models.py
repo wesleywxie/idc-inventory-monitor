@@ -51,25 +51,17 @@ class Goods(models.Model):
         ('Other','Other'),
     )
     dcChoices = (
-        ('HK','Hong Kong'),
         ('香港','HK'),
-        ('TYO','Tokyo, Japan'),
         ('日本东京','TYO'),
-        ('OSA','Osaka, Japan'),
         ('日本大阪','OSA'),
-        ('SEO','Seoul, KR'),
         ('韩国首尔','SEO'),
-        ('SG','Singapore'),
         ('新加坡','SG'),
-        ('SJ','San Jose, US'),
         ('美国圣何塞','SJ'),
-        ('LAX','Los Angeles, US'),
         ('美国洛杉矶','LAX'),
-        ('FFM','Frankfurt, DE'),
         ('德国法兰克福','FFM'),
-        ('上海','SH'),
-        ('泉州','QZ'),
-        ('东莞','DG'),
+        ('中国上海','SH'),
+        ('中国泉州','QZ'),
+        ('中国东莞','DG'),
         ('其他','Other'),
     )
     company = models.ForeignKey(Company , to_field='id' , on_delete=models.DO_NOTHING , verbose_name="商家",blank=False,null=False)
