@@ -48,7 +48,7 @@ class Goods(models.Model):
         ('HK','Hong Kong'),
         ('TYO','Tokyo, Japan'),
         ('OSA','Osaka, Japan'),
-        ('SEO',', Seoul, KR'),
+        ('SEO','Seoul, KR'),
         ('SG','Singapore'),
         ('SJ','San Jose, US'),
         ('LAX','Los Angeles, US'),
