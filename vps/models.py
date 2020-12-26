@@ -23,12 +23,13 @@ class Company(models.Model):
 
 class Goods(models.Model):
     archChoices = (
-        ('KVM','KVM'),
-        ('OpenVZ','OpenVZ')
+        ('KVM', 'KVM'),
+        ('OpenVZ', 'OpenVZ'),
+        ('Xen', 'Xen'),
     )
     stockChoices = (
-        (0,'无货'),
-        (1,'有货')        
+        (0, '无货'),
+        (1, '有货')
     )
     lineChoices = (
         ('CN2', 'CN2'),
@@ -36,33 +37,35 @@ class Goods(models.Model):
         ('联通', 'CU'),
         ('移动', 'CM'),
         ('三线', 'CTCUCM'),
-        ('专线', 'IPLC'),
-        ('GIA','GIA'),
+        ('香港专线', 'HKIPLC'),
+        ('日本专线', 'JPIPLC'),
+        ('GIA', 'GIA'),
         ('BGP', 'BGP'),
-        ('NTT','NTT'),
-        ('IIJ','IIJ'),
-        ('SoftBank','SoftBank'),
-        ('PCCW','PCCW'),
-        ('HKBN','HKBN'),
-        ('HGC','HGC'),
-        ('SINGTEL','Singtel'),
-        ('GTT','GTT'),
-        ('Telia','Telia'),
-        ('Other','Other'),
+        ('NTT', 'NTT'),
+        ('IIJ', 'IIJ'),
+        ('动态软银', 'InapSoftBank'),
+        ('软银', 'SB'),
+        ('PCCW', 'PCCW'),
+        ('HKBN', 'HKBN'),
+        ('HGC', 'HGC'),
+        ('Singtel', 'Singtel'),
+        ('GTT', 'GTT'),
+        ('Telia', 'Telia'),
+        ('其他线路', 'Other'),
     )
     dcChoices = (
-        ('香港','HK'),
-        ('日本东京','TYO'),
-        ('日本大阪','OSA'),
-        ('韩国首尔','SEO'),
-        ('新加坡','SG'),
-        ('美国圣何塞','SJ'),
-        ('美国洛杉矶','LAX'),
-        ('德国法兰克福','FFM'),
-        ('中国上海','SH'),
-        ('中国泉州','QZ'),
-        ('中国东莞','DG'),
-        ('其他','Other'),
+        ('香港', 'HK'),
+        ('日本东京', 'TYO'),
+        ('日本大阪', 'OSA'),
+        ('韩国首尔', 'SEO'),
+        ('新加坡', 'SG'),
+        ('美国圣何塞', 'SJ'),
+        ('美国洛杉矶', 'LAX'),
+        ('德国法兰克福', 'FFM'),
+        ('中国上海', 'SH'),
+        ('中国泉州', 'QZ'),
+        ('中国东莞', 'DG'),
+        ('其他', 'Other'),
     )
     company = models.ForeignKey(Company , to_field='id' , on_delete=models.DO_NOTHING , verbose_name="商家",blank=False,null=False)
     pid = models.IntegerField(verbose_name='PID',blank=False,null=False ,default=0 )
