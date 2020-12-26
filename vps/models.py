@@ -31,6 +31,11 @@ class Goods(models.Model):
         (1,'有货')        
     )
     lineChoices = (
+        ('CN2', 'CN2'),
+        ('电信', 'CT'),
+        ('联通', 'CU'),
+        ('移动', 'CM'),
+        ('三线', 'CTCUCM'),
         ('GIA','GIA'),
         ('BGP', 'BGP'),
         ('NTT','NTT'),
